@@ -11,17 +11,25 @@ Do this:
 $ python3 -m venv venv
 $ . venv/bin/activate
 $ venv/bin/python3 -m pip install --upgrade pip
-$ pip install flask
+$ pip install -r requirements.txt
 $ export FLASK_APP=flaskr
 $ export FLASK_ENV=development
 $ flask init-db
 $ flask run
 ```
 
+Lint:
+
+```bash
+$ pip install -r requirements.txt
+$ flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+$ flake8 . --count --exit-zero --max-complexity=10 --statistics
+```
+
 Test:
 
 ```bash
-$ pip install pytest coverage
+$ pip install -r requirements.txt
 $ export FLASK_APP=flaskr
 $ export FLASK_ENV=development
 $ flask init-db
@@ -40,7 +48,7 @@ $ cd example-ci-cd
 $ python3 -m venv venv
 $ . venv/bin/activate
 $ venv/bin/python3 -m pip install --upgrade pip
-$ pip install flask pytest coverage waitress
+$ pip install -r requirements.txt
 $ export FLASK_APP=flaskr
 $ flask init-db
 $ waitress-serve --call 'flaskr:create_app'
