@@ -43,7 +43,7 @@ NOTE: **THIS IS NOT SUPPOSED TO BE A PROD SERVER, IT IS TEST CODE**
 This is the demo code roll-out order of operations:
 
 ```bash
-$ git@github.com:heyjdp/example-ci-cd.git
+$ git clone git@github.com:heyjdp/example-ci-cd.git
 $ cd example-ci-cd
 $ python3 -m venv venv
 $ . venv/bin/activate
