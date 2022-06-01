@@ -62,4 +62,3 @@ To unwind it, if you stood it up in `localhost`:
 $ rm instance/flaskr.sqlite 
 $ deactivate
 ```
-hello
