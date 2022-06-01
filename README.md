@@ -49,8 +49,10 @@ $ python3 -m venv venv
 $ . venv/bin/activate
 $ venv/bin/python3 -m pip install --upgrade pip setuptools wheel
 $ pip install -r requirements.txt
+$ pip install -e .
 $ export FLASK_APP=flaskr
 $ flask init-db
+$ pytest
 $ waitress-serve --call 'flaskr:create_app'
 ```
 
