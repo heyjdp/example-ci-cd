@@ -10,7 +10,7 @@ Do this:
 ```bash
 $ python3 -m venv venv
 $ . venv/bin/activate
-$ venv/bin/python3 -m pip install --upgrade pip
+$ venv/bin/python3 -m pip install --upgrade pip setuptools wheel
 $ pip install -r requirements.txt
 $ export FLASK_APP=flaskr
 $ export FLASK_ENV=development
@@ -47,7 +47,7 @@ $ git clone git@github.com:heyjdp/example-ci-cd.git
 $ cd example-ci-cd
 $ python3 -m venv venv
 $ . venv/bin/activate
-$ venv/bin/python3 -m pip install --upgrade pip
+$ venv/bin/python3 -m pip install --upgrade pip setuptools wheel
 $ pip install -r requirements.txt
 $ export FLASK_APP=flaskr
 $ flask init-db
